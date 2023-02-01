@@ -9,7 +9,11 @@ const routes: Routes = [
   {
     path: 'infantis',
     loadChildren: () => import('./pages/infantis/infantis.module').then( m => m.InfantisPageModule)
+  },  {
+    path: 'verao',
+    loadChildren: () => import('./pages/verao/verao.module').then( m => m.VeraoPageModule)
   }
+
 ];
 @NgModule({
   imports: [
